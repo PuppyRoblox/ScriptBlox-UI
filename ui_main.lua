@@ -73,7 +73,7 @@ function module:Init()
 
     local fcs = {}
 
-    function fcs:AddScript(scriptname, typeOfScript, likes,dislikes,views, image, gamename)
+    function fcs:AddScript(scriptname, typeOfScript, likes3,dislikes,views3, image, gamename)
         local Template = Instance.new("Frame")
         local Picture = Instance.new("Frame")
         local ScriptPicture = Instance.new("ImageLabel")
@@ -153,7 +153,7 @@ function module:Init()
         views_2.Position = UDim2.new(1, 0, 0, 0)
         views_2.Size = UDim2.new(0, 105, 0, 25)
         views_2.Font = Enum.Font.Highway
-        views_2.Text = views
+        views_2.Text = views3
         views_2.TextColor3 = Color3.fromRGB(255, 255, 255)
         views_2.TextSize = 14.000
 
@@ -175,7 +175,7 @@ function module:Init()
         likes_2.Position = UDim2.new(1, 0, 0, 0)
         likes_2.Size = UDim2.new(0, 105, 0, 25)
         likes_2.Font = Enum.Font.Highway
-        likes_2.Text = tostring(math.round((likes / dislikes)*100)).."%"
+        likes_2.Text = tostring(math.round((likes3 / dislikes)*100)).."%"
         likes_2.TextColor3 = Color3.fromRGB(255, 255, 255)
         likes_2.TextSize = 14.000
 
