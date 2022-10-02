@@ -16,10 +16,8 @@ function module:Init()
     local UIListLayout = Instance.new("UIListLayout")
 
     Scriptloader.Name = "Scriptloader"
-    Scriptloader.Parent = game.Players.LocalPlayer.PlayerGui
+    Scriptloader.Parent = game:GetService("CoreGui")
     Scriptloader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-    syn.protect_gui(Scriptloader)
 
     Header1.Name = "Header1"
     Header1.Parent = RightWing
@@ -28,7 +26,7 @@ function module:Init()
     Header1.Position = UDim2.new(0.129010797, 0, -0.00054577738, 0)
     Header1.Size = UDim2.new(0, 183, 0, 70)
     Header1.Font = Enum.Font.Highway
-    Header1.Text = "<font color=\"rgb(170,0,255)\">Script</font>Blox Dashboard"
+    Header1.Text = "ScriptBlox Dashboard"
     Header1.TextColor3 = Color3.fromRGB(255, 255, 255)
     Header1.TextSize = 68.000
 
@@ -48,7 +46,7 @@ function module:Init()
     Header1_2.Position = UDim2.new(0.290598303, 0, -0.0035043573, 0)
     Header1_2.Size = UDim2.new(0, 183, 0, 70)
     Header1_2.Font = Enum.Font.Highway
-    Header1_2.Text = "<font color=\"rgb(170,0,255)\">Script</font>Blox"
+    Header1_2.Text = "ScriptBlox"
     Header1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
     Header1_2.TextSize = 68.000
 
