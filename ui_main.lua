@@ -32,6 +32,7 @@ function module:Init()
     Header.BackgroundTransparency = 1.000
     Header.Position = UDim2.new(0.00425230339, 0, 0.00212867255, 0)
     Header.Size = UDim2.new(0, 557, 0, 70)
+    Header.RichText = true
     Header.Font = Enum.Font.Highway
     Header.Text = "<font color=\"rgb(170, 0, 255)\">Script</font>Blox Dashboard"
     Header.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -53,6 +54,7 @@ function module:Init()
     Header_2.Position = UDim2.new(0, 0, -0.000548692537, 0)
     Header_2.Size = UDim2.new(0, 468, 0, 70)
     Header_2.Font = Enum.Font.Highway
+    Header_2.RichText = true
     Header_2.Text = "<font color=\"rgb(170, 0, 255)\">Script</font>Blox"
     Header_2.TextColor3 = Color3.fromRGB(255, 255, 255)
     Header_2.TextSize = 68.000
