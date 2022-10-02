@@ -73,7 +73,7 @@ function module:Init()
 
     local fcs = {}
 
-    function fcs:AddScript(scriptname, typeOfScript, likes3,dislikes,views3, image, gamename)
+    function fcs:AddScript(v_scriptname, v_typeOfScript, v_likes3,v_dislikes,v_views3, v_image, v_gamename)
         local Template = Instance.new("Frame")
         local Picture = Instance.new("Frame")
         local ScriptPicture = Instance.new("ImageLabel")
@@ -95,7 +95,7 @@ function module:Init()
         local TextLabel = Instance.new("TextLabel")
         local UICorner_4 = Instance.new("UICorner")
 
-        Template.Name = scriptname
+        Template.Name = v_scriptname
         Template.Parent = Storage
         Template.BackgroundColor3 = Color3.fromRGB(0, 80, 120)
         Template.BorderSizePixel = 0
@@ -114,7 +114,7 @@ function module:Init()
         ScriptPicture.Position = UDim2.new(0.0021978023, 0, -0.0304182507, 0)
         ScriptPicture.Size = UDim2.new(0, 454, 0, 264)
         --ScriptPicture.Image = "http://www.roblox.com/asset/?id=10201001615"
-        ScriptPicture.Image = image
+        ScriptPicture.Image = v_image
 
         UICorner_3.CornerRadius = UDim.new(0, 18)
         UICorner_3.Parent = ScriptPicture
@@ -153,7 +153,7 @@ function module:Init()
         views_2.Position = UDim2.new(1, 0, 0, 0)
         views_2.Size = UDim2.new(0, 105, 0, 25)
         views_2.Font = Enum.Font.Highway
-        views_2.Text = views3
+        views_2.Text = v_views3
         views_2.TextColor3 = Color3.fromRGB(255, 255, 255)
         views_2.TextSize = 14.000
 
@@ -175,7 +175,7 @@ function module:Init()
         likes_2.Position = UDim2.new(1, 0, 0, 0)
         likes_2.Size = UDim2.new(0, 105, 0, 25)
         likes_2.Font = Enum.Font.Highway
-        likes_2.Text = tostring(math.round((likes3 / dislikes)*100)).."%"
+        likes_2.Text = tostring(math.round((v_likes3 / v_dislikes)*100)).."%"
         likes_2.TextColor3 = Color3.fromRGB(255, 255, 255)
         likes_2.TextSize = 14.000
 
@@ -186,7 +186,7 @@ function module:Init()
         types.Position = UDim2.new(0.00662251655, 0, 0.668291211, 0)
         types.Size = UDim2.new(0, 150, 0, 32)
         types.Font = Enum.Font.Unknown
-        types.Text = typeOfScript
+        types.Text = v_typeOfScript
         types.TextColor3 = Color3.fromRGB(255, 255, 255)
         types.TextSize = 31.000
 
@@ -222,7 +222,7 @@ function module:Init()
         types_2.Position = UDim2.new(0.0373626389, 0, 0, 0)
         types_2.Size = UDim2.new(0, 156, 0, 35)
         types_2.Font = Enum.Font.Highway
-        types_2.Text = gamename
+        types_2.Text = v_gamename
         types_2.TextColor3 = Color3.fromRGB(255, 255, 255)
         types_2.TextSize = 22.000
         types_2.TextXAlignment = Enum.TextXAlignment.Left
@@ -234,7 +234,7 @@ function module:Init()
         name.Position = UDim2.new(0.0285714287, 0, 0.479452044, 0)
         name.Size = UDim2.new(0, 455, 0, 35)
         name.Font = Enum.Font.Highway
-        name.Text = scriptname
+        name.Text = v_scriptname
         name.TextColor3 = Color3.fromRGB(255, 255, 255)
         name.TextSize = 22.000
         name.TextXAlignment = Enum.TextXAlignment.Left
