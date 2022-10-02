@@ -365,8 +365,8 @@ function module:Init()
         local Shadow_2 = Instance.new("Frame")
         local TextLabel_2 = Instance.new("TextLabel")
         local UICorner_4 = Instance.new("UICorner")
-
-        Template.Name = v_n
+        
+      
         Template.Parent = area
         Template.BackgroundColor3 = Color3.fromRGB(0, 80, 120)
         Template.BorderSizePixel = 0
