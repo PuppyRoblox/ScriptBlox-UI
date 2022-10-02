@@ -16,7 +16,7 @@ function module:Init()
     local UIListLayout = Instance.new("UIListLayout")
 
     Scriptloader.Name = "Scriptloader"
-    Scriptloader.Parent = game.Players.LocalPlayer.PlayerGui
+    Scriptloader.Parent = game:GetService("CoreGui")
     Scriptloader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
     RightWing.Name = "RightWing"
@@ -68,6 +68,8 @@ function module:Init()
     Storage.BackgroundTransparency = 1.000
     Storage.Position = UDim2.new(0, 0, 0.0738916248, 0)
     Storage.Size = UDim2.new(0, 468, 0, 940)
+    Storage.AutomaticCanvasSize = Enum.AutomaticSize.Y
+    Storage.ScrollBarImageColor3 = Color3.fromRGB(170, 0, 255)
 
     UIListLayout.Parent = Storage
     UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
