@@ -16,7 +16,7 @@ function module:Init()
     local UIListLayout = Instance.new("UIListLayout")
 
     Scriptloader.Name = "Scriptloader"
-    Scriptloader.Parent = game:GetService("CoreGui")
+    Scriptloader.Parent = game.Players.LocalPlayer.PlayerGui
     Scriptloader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
     RightWing.Name = "RightWing"
