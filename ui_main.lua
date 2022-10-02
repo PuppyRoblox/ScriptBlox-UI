@@ -36,7 +36,7 @@ function module:Init()
     Header.Size = UDim2.new(0, 557, 0, 70)
     Header.RichText = true
     Header.Font = Enum.Font.Highway
-    Header.Text = "<font color=\"rgb(170, 0, 255)\">Script</font>Blox Dashboard"
+    Header.Text = "Script"
     Header.TextColor3 = Color3.fromRGB(255, 255, 255)
     Header.TextSize = 68.000
 
