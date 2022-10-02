@@ -345,7 +345,7 @@ function module:Init()
     local fcs = {}
 
     function fcs:AddScript(area, v_n, v_i,v_l,v_t,v_v)
-        local Template = Instance.new("Frame")
+        local Template = Instance.new("Frame", area)
         local Picture = Instance.new("Frame")
         local ScriptPicture = Instance.new("ImageLabel")
         local UICorner_3 = Instance.new("UICorner")
@@ -366,8 +366,6 @@ function module:Init()
         local TextLabel_2 = Instance.new("TextLabel")
         local UICorner_4 = Instance.new("UICorner")
         
-      
-        Template.Parent = area
         Template.BackgroundColor3 = Color3.fromRGB(0, 80, 120)
         Template.BorderSizePixel = 0
         Template.Size = UDim2.new(0, 455, 0, 338)
