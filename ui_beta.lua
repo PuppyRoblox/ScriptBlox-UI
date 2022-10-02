@@ -178,7 +178,7 @@ function module:Init()
         likes_2.Size = UDim2.new(0, 105, 0, 25)
         likes_2.Font = Enum.Font.Highway
         local ratio = v_likes3 / views * 100
-        likes_2.Text = tostring(math.round(ratio)).."%"
+        likes_2.Text = tostring(ratio).."%"
         likes_2.TextColor3 = Color3.fromRGB(255, 255, 255)
         likes_2.TextSize = 14.000
 
