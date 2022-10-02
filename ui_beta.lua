@@ -366,7 +366,7 @@ function module:Init()
         local TextLabel_2 = Instance.new("TextLabel")
         local UICorner_4 = Instance.new("UICorner")
 
-        Template.Name = "Template"
+        Template.Name = Properties["Name"]
         Template.Parent = area
         Template.BackgroundColor3 = Color3.fromRGB(0, 80, 120)
         Template.BorderSizePixel = 0
@@ -384,7 +384,7 @@ function module:Init()
         ScriptPicture.BackgroundTransparency = 1.000
         ScriptPicture.Position = UDim2.new(0.0021978023, 0, -0.0304182507, 0)
         ScriptPicture.Size = UDim2.new(0, 454, 0, 264)
-        ScriptPicture.Image = Properties["Image"]
+        ScriptPicture.Image = tostring(Properties["Image"])
 
         UICorner_3.CornerRadius = UDim.new(0, 18)
         UICorner_3.Parent = ScriptPicture
