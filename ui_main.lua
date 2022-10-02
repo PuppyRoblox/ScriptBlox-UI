@@ -7,19 +7,28 @@ function module:Init()
 
     local Scriptloader = Instance.new("ScreenGui")
     local RightWing = Instance.new("Frame")
-    local Header = Instance.new("TextLabel")
+    local Header1 = Instance.new("TextLabel")
     local UICorner = Instance.new("UICorner")
     local LeftWing = Instance.new("Frame")
-    local Header_2 = Instance.new("TextLabel")
+    local Header1_2 = Instance.new("TextLabel")
     local UICorner_2 = Instance.new("UICorner")
     local Storage = Instance.new("ScrollingFrame")
     local UIListLayout = Instance.new("UIListLayout")
-    local Header2_2 = Instance.new("TextLabel")
-    local Header2 = Instance.new("TextLabel")
 
     Scriptloader.Name = "Scriptloader"
     Scriptloader.Parent = game:GetService("CoreGui")
     Scriptloader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+    Header1.Name = "Header1"
+    Header1.Parent = RightWing
+    Header1.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+    Header1.BackgroundTransparency = 1.000
+    Header1.Position = UDim2.new(0.129010797, 0, -0.00054577738, 0)
+    Header1.Size = UDim2.new(0, 183, 0, 70)
+    Header1.Font = Enum.Font.Highway
+    Header1.Text = "<font color=\"rgb(170,0,255)\">Script</font>Blox Dashboard"
+    Header1.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Header1.TextSize = 68.000
 
     RightWing.Name = "RightWing"
     RightWing.Parent = Scriptloader
@@ -28,30 +37,18 @@ function module:Init()
     RightWing.Position = UDim2.new(0.257038504, 0, 0.0101851849, 0)
     RightWing.Size = UDim2.new(0, 1411, 0, 1014)
 
-    Header.Name = "Header"
-    Header.Parent = RightWing
-    Header.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
-    Header.BackgroundTransparency = 1.000
-    Header.Position = UDim2.new(0.00425230339, 0, 0.00212867255, 0)
-    Header.Size = UDim2.new(0, 557, 0, 70)
-    Header.RichText = true
-    Header.Font = Enum.Font.Highway
-    Header.Text = "Script"
-    Header.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Header.TextSize = 68.000
-
-    Header2.Name = "Header2"
-    Header2.Parent = RightWing
-    Header2.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
-    Header2.BackgroundTransparency = 1.000
-    Header2.Position = UDim2.new(0.190036148, 0, 0.00142175087, 0)
-    Header2.Size = UDim2.new(0, 183, 0, 70)
-    Header2.Font = Enum.Font.Highway
-    Header2.Text = "Blox Dashboard"
-    Header2.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Header2.TextSize = 68.000
-
     UICorner.Parent = RightWing
+
+    Header1_2.Name = "Header1"
+    Header1_2.Parent = LeftWing
+    Header1_2.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+    Header1_2.BackgroundTransparency = 1.000
+    Header1_2.Position = UDim2.new(0.290598303, 0, -0.0035043573, 0)
+    Header1_2.Size = UDim2.new(0, 183, 0, 70)
+    Header1_2.Font = Enum.Font.Highway
+    Header1_2.Text = "<font color=\"rgb(170,0,255)\">Script</font>Blox"
+    Header1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Header1_2.TextSize = 68.000
 
     LeftWing.Name = "LeftWing"
     LeftWing.Parent = Scriptloader
@@ -59,29 +56,6 @@ function module:Init()
     LeftWing.BorderSizePixel = 0
     LeftWing.Position = UDim2.new(0.0052137645, 0, 0.0101851849, 0)
     LeftWing.Size = UDim2.new(0, 468, 0, 1015)
-
-    Header_2.Name = "Header"
-    Header_2.Parent = LeftWing
-    Header_2.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
-    Header_2.BackgroundTransparency = 1.000
-    Header_2.Position = UDim2.new(0, 0, -0.000548692537, 0)
-    Header_2.Size = UDim2.new(0, 468, 0, 70)
-    Header_2.Font = Enum.Font.Highway
-    Header_2.RichText = true
-    Header_2.Text = "Script"
-    Header_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Header_2.TextSize = 68.000
-
-    Header2_2.Name = "Header2"
-    Header2_2.Parent = LeftWing
-    Header2_2.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
-    Header2_2.BackgroundTransparency = 1.000
-    Header2_2.Position = UDim2.new(0.448717952, 0, 0.00142175087, 0)
-    Header2_2.Size = UDim2.new(0, 183, 0, 70)
-    Header2_2.Font = Enum.Font.Highway
-    Header2_2.Text = "Blox"
-    Header2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Header2_2.TextSize = 68.000
 
     UICorner_2.Parent = LeftWing
 
